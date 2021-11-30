@@ -44,6 +44,7 @@ def display(num: int):
     app = wx.App()
     frame = MyFrame()
     frame.InitUI(prime_number(num), num)
+    app.SetTopWindow(frame)
     frame.Show()
     app.MainLoop()
 
